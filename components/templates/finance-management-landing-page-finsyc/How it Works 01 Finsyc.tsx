@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Sparkles,
   ArrowUpRight,
   FormInput,
   Share2,
@@ -89,7 +88,6 @@ export default function FinsycOriginal4step({ className }: { className?: string 
                 viewport={{ once: true }}
                 className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#3779eb]/20 bg-[#3779eb]/10 whitespace-nowrap mb-6"
               >
-                <Sparkles className="w-4 h-4 text-[#3779eb]" strokeWidth={2.5} />
                 <span className="text-[#3779eb] text-center font-inter text-base font-normal leading-6 tracking-[-0.3px]">
                   How It Works
                 </span>

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles, Check, X, ArrowUpRight, ChevronDown, ChevronUp, Sliders } from "lucide-react";
+import { Check, X, ArrowUpRight, ChevronDown, ChevronUp, Sliders } from "lucide-react";
 import { PRICING, type Plan, type Product, type ProductKey } from "@/content/pricing";
 import { cn } from "@/lib/utils";
 
@@ -43,7 +43,6 @@ export default function PricingFinsyc({ className }: { className?: string }) {
               transition={{ duration: 0.6 }}
               className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#3779eb]/20 bg-[#3779eb]/10 whitespace-nowrap mb-6"
             >
-              <Sparkles className="w-4 h-4 text-[#3779eb]" />
               <span className="text-[#3779eb] font-inter text-base font-normal leading-6 tracking-[-0.3px]">
                 Transparent Pricing
               </span>
@@ -110,11 +109,6 @@ export default function PricingFinsyc({ className }: { className?: string }) {
                           transition={{ type: "spring", stiffness: 450, damping: 35 }}
                         />
                       )}
-                      {isConversion ? (
-                        <Sparkles className={cn("h-4 w-4 shrink-0", isActive ? "text-white" : "text-[#2563EB]")} />
-                      ) : (
-                        <ArrowUpRight className={cn("h-4 w-4 shrink-0", isActive ? "text-white" : "text-[#2563EB]")} />
-                      )}
                       <span>{PRICING[key].label} Giveaways</span>
                       <span
                         className={cn(
@@ -170,8 +164,7 @@ export default function PricingFinsyc({ className }: { className?: string }) {
                       />
                     )}
                     <span>Annual billing</span>
-                    <span className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 px-2.5 py-0.5 text-[11px] font-bold text-white shadow-xs">
-                      <Sparkles className="w-2.5 h-2.5" />
+                    <span className="inline-flex items-center rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 px-2.5 py-0.5 text-[11px] font-bold text-white shadow-xs">
                       Save 40%
                     </span>
                   </button>
@@ -281,11 +274,6 @@ function PlanCard({
         {/* Tier Name */}
         <div className="flex items-center justify-between">
           <h3 className="font-onest text-xl font-bold text-[#111827]">{plan.name}</h3>
-          {isFeatured && (
-            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#3779eb]/10 text-[#2563EB]">
-              <Sparkles className="h-3.5 w-3.5 fill-[#2563EB]" />
-            </span>
-          )}
         </div>
 
         {/* Pricing */}
@@ -484,7 +472,6 @@ function ScaleModal({ productKey, onClose }: { productKey: ProductKey; onClose: 
         </button>
 
         <div className="flex items-center gap-2 px-3 py-1 rounded-full border border-[#3779eb]/20 bg-[#3779eb]/10 whitespace-nowrap w-fit mb-3">
-          <Sparkles className="w-3.5 h-3.5 text-[#3779eb]" />
           <span className="text-[#3779eb] font-inter text-xs font-semibold">Scale Volume Calculator</span>
         </div>
 

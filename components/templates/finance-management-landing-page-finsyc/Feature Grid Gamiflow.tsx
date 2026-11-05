@@ -3,7 +3,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   LayoutGrid,
   GitBranch,
   SlidersHorizontal,
@@ -35,7 +34,7 @@ const features: Array<{ title: string; description: string; icon: LucideIcon }> 
   { title: "Embeddable campaign experiences", description: "Available where supported.", icon: AppWindow },
 ];
 
-export default function FeatureGridGamiflow({ className }: { className?: string }) {
+export default function FeatureGridTragami({ className }: { className?: string }) {
   return (
     <>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,7 +51,6 @@ export default function FeatureGridGamiflow({ className }: { className?: string 
               transition={{ duration: 0.6 }}
               className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#3779eb]/20 bg-[#3779eb]/10 whitespace-nowrap"
             >
-              <Sparkles className="w-4 h-4 text-[#3779eb]" />
               <span className="text-[#3779eb] text-center font-inter text-base font-normal leading-6 tracking-[-0.3px]">
                 Features
               </span>

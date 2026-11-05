@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Sparkles, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { CHANNEL_HREF, CONVERSION_HREF, SIGNUP_HREF, FOOTER_COLUMNS } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
@@ -136,7 +136,6 @@ export default function CtaWithFooter01Finsyc({
                 viewport={{ once: true }}
                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#3779eb]/10 border border-[#3779eb]/20 mb-[30px]"
               >
-                <Sparkles className="w-3.5 h-3.5 text-[#3779eb]" />
                 <span className="text-[#3779eb] text-[13px] font-sans font-medium uppercase tracking-wider">Launch your next campaign</span>
               </motion.div>
 

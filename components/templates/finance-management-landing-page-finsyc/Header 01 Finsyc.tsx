@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Sparkles, Check } from "lucide-react";
+import { ArrowUpRight, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { DashboardMock, SampleNote } from "./Mockups";
 
@@ -119,7 +119,6 @@ export default function FinsycOriginalHeader({ className }: { className?: string
               transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" as const }}
               className="flex flex-row items-center gap-1.5 sm:gap-2 px-3 sm:px-[14px] py-1.5 rounded-full bg-[#3779eb]/10 border border-[#3779eb]/20 mb-6 whitespace-nowrap"
             >
-              <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#3779eb] text-[#3779eb]" />
               <span className="font-inter text-sm sm:text-base lg:text-[18px] font-medium leading-[28px] text-[#3779eb]">
                 Giveaway campaign platform
               </span>

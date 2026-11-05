@@ -225,7 +225,7 @@ export const page: PageData = {
         },
         {
           "type": "table",
-          "url": "app.gamiflow.com/channel/ridgeline-dealers",
+          "url": "app.tragami.com/channel/ridgeline-dealers",
           "head": [
             "Dealer",
             "Source",

@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 /**
  * Rebuilt from the "CTA + FAQ" spec: an animated-gradient CTA card on the
- * left, an FAQ accordion on the right. Colors retinted to Gamiflow's
+ * left, an FAQ accordion on the right. Colors retinted to Tragami's
  * palette; the CSS mechanism (five drifting/pulsing radial-gradient blobs
  * via @property) is kept exactly as given, in globals.css as
  * .c5-animated-gradient. The reference's own footer isn't duplicated here

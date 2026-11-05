@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FormInput, Route, Sparkles, Check, ArrowUpRight } from "lucide-react";
+import { FormInput, Route, Check, ArrowUpRight } from "lucide-react";
 import { CHANNEL_HREF, CONVERSION_HREF } from "@/lib/site";
 import { ChannelMock, ConversionMock, SampleNote } from "./Mockups";
 
@@ -127,7 +127,6 @@ export default function OriginaFinsycFeature({ className }: { className?: string
                 transition={{ duration: 0.6 }}
                 className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#3779eb]/20 bg-[#3779eb]/10 whitespace-nowrap"
               >
-                <Sparkles className="w-4 h-4 text-[#3779eb]" />
                 <span className="text-[#3779eb] text-center font-inter text-base font-normal leading-6 tracking-[-0.3px]">
                   Our Products
                 </span>

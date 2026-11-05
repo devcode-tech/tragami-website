@@ -230,7 +230,7 @@ export const page: PageData = {
         },
         {
           "type": "table",
-          "url": "app.gamiflow.com/conversion/meridian-expo-recap",
+          "url": "app.tragami.com/conversion/meridian-expo-recap",
           "head": [
             "Day",
             "Booth visitors",

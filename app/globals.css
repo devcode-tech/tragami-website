@@ -255,7 +255,7 @@ body {
   animation: flowDash 1.6s linear infinite;
 }
 
-/* ---------- flowing dot down the "Gamiflow" connected comparison card ---
+/* ---------- flowing dot down the "Tragami" connected comparison card ---
    animates `top` (resolves against the containing block) rather than
    `transform: translateY(%)`, which for an absolutely positioned element
    resolves against its OWN tiny box and would barely move at all ---- */

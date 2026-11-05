@@ -237,7 +237,7 @@ export const page: PageData = {
         },
         {
           "type": "table",
-          "url": "app.gamiflow.com/conversion/fieldstack-expo-queue",
+          "url": "app.tragami.com/conversion/fieldstack-expo-queue",
           "head": [
             "Email",
             "Inferred company",

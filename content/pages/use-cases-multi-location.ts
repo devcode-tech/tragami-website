@@ -227,7 +227,7 @@ export const page: PageData = {
         },
         {
           "type": "table",
-          "url": "app.gamiflow.com/conversion/ironclad-free-week",
+          "url": "app.tragami.com/conversion/ironclad-free-week",
           "head": [
             "Location",
             "Leads",

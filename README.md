@@ -1,4 +1,4 @@
-# Gamiflow marketing site
+# Tragami marketing site
 
 Next.js 14 (App Router) + TypeScript + Tailwind CSS v4 + Motion + lucide-react.
 
@@ -30,7 +30,7 @@ Notes on how the brief was applied:
 
 - **Engage content is removed** from the homepage, the nav and footer, the sitemap, and the two
   dedicated pages (`/engage`, `/platform/gamification`, now deleted). The only mention left is the
-  FAQ entry "Does Gamiflow include mini-games?", which the brief asks for. Delete that item in
+  FAQ entry "Does Tragami include mini-games?", which the brief asks for. Delete that item in
   `FAQ Gamiflow.tsx` if you would rather not mention games at all. Wording about engagement still
   appears in the older internal pages (Capture, Retain and the use-case pages); those are untouched.
 - **Nothing invented.** The brief rules out made-up stats, testimonials, customer logos and
@@ -49,7 +49,7 @@ Notes on how the brief was applied:
   replace them. The product mockups are code, not images, so swap them for screenshots whenever
   you have real ones.
 - **Fonts.** Inter, Onest and Playfair Display, loaded by each section and registered in
-  `app/globals.css`. The giant footer wordmark is sized down so "Gamiflow" fits.
+  `app/globals.css`. The giant footer wordmark is sized down so "Tragami" fits.
 
 The previous homepage components (`Hero.tsx`, `GlassMetrics.tsx`, `GameShowcase.tsx`, etc. in
 `components/`) are not used by any page. They still contain game and Engage content; delete them

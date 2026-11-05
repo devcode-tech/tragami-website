@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { Sparkles, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -124,7 +124,6 @@ export default function WhyChooseUs01Finsyc({
                   viewport={{ once: true }}
                   className="px-4 py-2 bg-[#3779eb]/10 border border-[#3779eb]/20 rounded-full flex items-center gap-2 mb-8"
                 >
-                  <Sparkles className="w-4 h-4 text-[#3779eb] fill-[#3779eb]" />
                   <span className="text-[#3779eb] font-sans text-sm font-medium">{badge}</span>
                 </motion.div>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { TrendingUp, Sparkles, BarChart3, ShieldCheck, CheckCircle2 } from "lucide-react";
+import { TrendingUp, BarChart3, ShieldCheck, CheckCircle2 } from "lucide-react";
 import type { Accent } from "@/lib/category";
 import { cn } from "@/lib/utils";
 

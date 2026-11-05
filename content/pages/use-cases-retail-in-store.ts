@@ -301,7 +301,7 @@ export const page: PageData = {
         },
         {
           "type": "table",
-          "url": "app.gamiflow.com/conversion/casa-verde-showdown",
+          "url": "app.tragami.com/conversion/casa-verde-showdown",
           "head": [
             "Location",
             "Entries",
@@ -347,7 +347,7 @@ export const page: PageData = {
         },
         {
           "type": "table",
-          "url": "app.gamiflow.com/conversion/harlow-rowe-leads",
+          "url": "app.tragami.com/conversion/harlow-rowe-leads",
           "head": [
             "Associate",
             "Store",

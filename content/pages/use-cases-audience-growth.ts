@@ -212,7 +212,7 @@ export const page: PageData = {
         },
         {
           "type": "table",
-          "url": "app.gamiflow.com/conversion/local-pour-founding",
+          "url": "app.tragami.com/conversion/local-pour-founding",
           "head": [
             "Action",
             "Members who completed it",

@@ -96,7 +96,7 @@ export const page: PageData = {
           "features": [],
           "visual": {
             "type": "table",
-            "url": "app.gamiflow.com/channel/scorecard",
+            "url": "app.tragami.com/channel/scorecard",
             "head": [
               "Source",
               "Type",

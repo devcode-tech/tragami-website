@@ -229,7 +229,7 @@ export const page: PageData = {
         },
         {
           "type": "table",
-          "url": "app.gamiflow.com/conversion/nova-launch-recap",
+          "url": "app.tragami.com/conversion/nova-launch-recap",
           "head": [
             "Segment",
             "List size",

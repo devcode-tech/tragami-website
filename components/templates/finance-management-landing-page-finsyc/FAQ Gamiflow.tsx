@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Sparkles, ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const faqs = [
@@ -32,7 +32,7 @@ const faqs = [
   },
 ];
 
-export default function FaqGamiflow({ className }: { className?: string }) {
+export default function FaqTragami({ className }: { className?: string }) {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
@@ -50,7 +50,6 @@ export default function FaqGamiflow({ className }: { className?: string }) {
             transition={{ duration: 0.6 }}
             className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#3779eb]/20 bg-[#3779eb]/10 whitespace-nowrap"
           >
-            <Sparkles className="w-4 h-4 text-[#3779eb]" />
             <span className="text-[#3779eb] font-inter text-base leading-6 tracking-[-0.3px]">FAQ</span>
           </motion.div>
 

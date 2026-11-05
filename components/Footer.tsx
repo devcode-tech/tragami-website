@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { Music2, Facebook, Twitter, Youtube, Instagram } from "lucide-react";
 import Link from "next/link";
-import { GamiflowMark } from "@/components/ui/GamiflowMark";
+import { TragamiMark } from "@/components/ui/GamiflowMark";
 import { FOOTER_COLUMNS } from "@/lib/site";
 
 const LUMINA_VIDEO_SRC =
@@ -41,7 +41,7 @@ export function Footer() {
         <div className="mb-10 grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-12">
           <div className="md:col-span-5">
             <div className="flex items-center gap-2 text-xl font-medium text-white">
-              <GamiflowMark className="h-6 w-6" />
+              <TragamiMark className="h-6 w-6" />
               TRAGAMI
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed">

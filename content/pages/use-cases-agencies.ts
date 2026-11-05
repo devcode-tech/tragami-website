@@ -227,7 +227,7 @@ export const page: PageData = {
         },
         {
           "type": "table",
-          "url": "app.gamiflow.com/agency/pixel-and-pine",
+          "url": "app.tragami.com/agency/pixel-and-pine",
           "head": [
             "Client",
             "Active campaign",

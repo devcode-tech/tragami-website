@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { Check, ArrowRight } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { GamiflowMark } from "@/components/ui/GamiflowMark";
+import { TragamiMark } from "@/components/ui/GamiflowMark";
 import { cn } from "@/lib/utils";
 
 /**
@@ -99,7 +99,7 @@ export function Attribution() {
                 className="z-10 flex items-center gap-2 whitespace-nowrap rounded-full px-5 py-3 text-base font-medium shadow-sm"
                 style={{ backgroundImage: "linear-gradient(135deg, rgb(255,255,255), rgba(255,255,255,.85))" }}
               >
-                <GamiflowMark className="h-4 w-4 shrink-0 text-[#4b3cf0]" />
+                <TragamiMark className="h-4 w-4 shrink-0 text-[#4b3cf0]" />
                 {pillar.label}
               </div>
 
@@ -129,7 +129,7 @@ export function Attribution() {
                 className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-[18px] py-[10px] text-[15px] font-medium"
                 style={{ backgroundImage: "linear-gradient(135deg, rgb(255,255,255), rgba(255,255,255,.6))" }}
               >
-                <GamiflowMark className="h-4 w-4 text-[#4b3cf0]" />
+                <TragamiMark className="h-4 w-4 text-[#4b3cf0]" />
                 {pillar.label}
               </div>
               <div className="flex w-full items-stretch" style={{ flexDirection: isRight ? "row-reverse" : "row" }}>

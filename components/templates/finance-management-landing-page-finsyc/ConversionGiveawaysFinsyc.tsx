@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Sparkles,
   ArrowUpRight,
   Menu,
   X,
@@ -211,7 +210,6 @@ export default function ConversionGiveawaysFinsyc() {
                 transition={{ delay: 0.3, duration: 0.8 }}
                 className="flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-[#3779eb]/10 border border-[#3779eb]/20 mb-6 whitespace-nowrap"
               >
-                <Sparkles className="w-4 h-4 text-[#3779eb]" />
                 <span className="font-inter text-xs sm:text-sm font-semibold tracking-wide text-[#3779eb] uppercase">
                   Product · Conversion Giveaways
                 </span>
@@ -307,7 +305,6 @@ export default function ConversionGiveawaysFinsyc() {
                 viewport={{ once: true }}
                 className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#3779eb]/20 bg-[#3779eb]/10 whitespace-nowrap mb-6"
               >
-                <Sparkles className="w-4 h-4 text-[#3779eb]" />
                 <span className="text-[#3779eb] font-inter text-base font-normal leading-6 tracking-[-0.3px]">
                   Engineered For Conversion
                 </span>
@@ -385,7 +382,6 @@ export default function ConversionGiveawaysFinsyc() {
                 viewport={{ once: true }}
                 className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#3779eb]/20 bg-[#3779eb]/10 whitespace-nowrap mb-6"
               >
-                <Sparkles className="w-4 h-4 text-[#3779eb]" />
                 <span className="text-[#3779eb] font-inter text-base font-normal leading-6 tracking-[-0.3px]">
                   Interactive Showcase
                 </span>
@@ -443,9 +439,6 @@ export default function ConversionGiveawaysFinsyc() {
                       {activeTabContent.description}
                     </p>
                   </div>
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#3779eb]/10 text-[#2563EB]">
-                    <Sparkles className="h-4 w-4" />
-                  </span>
                 </div>
 
                 <div className="mt-6 space-y-4">
@@ -484,7 +477,6 @@ export default function ConversionGiveawaysFinsyc() {
         <section className="w-full bg-[#FFFEFF] py-20 lg:py-28">
           <div className="max-w-[860px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
             <div className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#3779eb]/20 bg-[#3779eb]/10 whitespace-nowrap mb-6">
-              <Sparkles className="w-4 h-4 text-[#3779eb]" />
               <span className="text-[#3779eb] font-inter text-base leading-6 tracking-[-0.3px]">
                 Product Questions
               </span>

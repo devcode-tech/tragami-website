@@ -1,5 +1,4 @@
 import React from "react";
-import { Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 /** Small pill used above headings (matching the Finsyc homepage badge). */
@@ -22,7 +21,6 @@ export function Badge({
         className
       )}
     >
-      <Sparkles className={cn("w-3.5 h-3.5 shrink-0", tone === "dark" ? "text-white/80" : "text-[#3779eb]")} />
       <span>{children}</span>
     </span>
   );

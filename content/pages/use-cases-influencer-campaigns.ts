@@ -99,7 +99,7 @@ export const page: PageData = {
                   {
                     "b": "own tracked entry link"
                   },
-                  " (gamiflow.com/bloom/via/mia) and their ",
+                  " (tragami.com/bloom/via/mia) and their ",
                   {
                     "b": "own coupon code"
                   },
@@ -250,7 +250,7 @@ export const page: PageData = {
         },
         {
           "type": "table",
-          "url": "app.gamiflow.com/conversion/bloom-giveaway",
+          "url": "app.tragami.com/conversion/bloom-giveaway",
           "head": [
             "Influencer",
             "Coupon",
