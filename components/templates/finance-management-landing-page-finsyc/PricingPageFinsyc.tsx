@@ -9,8 +9,8 @@ import CTAWithFooter01Finsyc from "./CTA with Footer 01 Finsyc";
 
 const pricingFaqs = [
   {
-    q: "Can I switch between Conversion and Channel plans?",
-    a: "Yes. Conversion and Channel are modular engines. You can subscribe to either or both depending on whether your current focus is lead generation or partner attribution.",
+    q: "Can I switch between Conversion, Channel, and One App plans?",
+    a: "Yes. Conversion and Channel can be subscribed to individually, or you can choose the One App suite to get both interactive giveaway forms and full partner attribution in a single subscription.",
   },
   {
     q: "What happens if I exceed my monthly or yearly entry limit?",
@@ -30,6 +30,40 @@ export default function PricingPageFinsyc() {
   const [isMounted, setIsMounted] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
+  const pricingSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Tragami Giveaway & Attribution Platform",
+    description:
+      "Subscription plans for Conversion Giveaways, Channel Giveaways, and the combined One App suite with first-touch and multi-touch partner attribution.",
+    offers: [
+      {
+        "@type": "AggregateOffer",
+        name: "Conversion Giveaways",
+        priceCurrency: "USD",
+        lowPrice: "29",
+        highPrice: "499",
+        description: "Form builder and lead capture engine with custom rules, validation, and coupons.",
+      },
+      {
+        "@type": "AggregateOffer",
+        name: "Channel Giveaways",
+        priceCurrency: "USD",
+        lowPrice: "83",
+        highPrice: "999",
+        description: "Source attribution engine with trackable links, QR codes, and partner leaderboards.",
+      },
+      {
+        "@type": "AggregateOffer",
+        name: "One App (Combined Suite)",
+        priceCurrency: "USD",
+        lowPrice: "99",
+        highPrice: "1299",
+        description: "All-in-one suite combining full Conversion Giveaways forms and Channel Giveaways partner attribution.",
+      },
+    ],
+  };
+
   useEffect(() => {
     const timer = setTimeout(() => setIsMounted(true), 0);
     return () => clearTimeout(timer);
@@ -37,6 +71,10 @@ export default function PricingPageFinsyc() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingSchema) }}
+      />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link
@@ -98,7 +136,7 @@ export default function PricingPageFinsyc() {
                 transition={{ delay: 0.7, duration: 0.8 }}
                 className="max-w-[640px] w-full mt-4 font-inter text-base sm:text-lg lg:text-[20px] font-normal leading-relaxed text-[#111827] opacity-80"
               >
-                Conversion and Channel are priced separately, so you only pay for the exact giveaway capability you need. Upgrade or customize volume anytime.
+                Choose Conversion, Channel, or the all-in-one One App suite that combines lead capture with multi-channel partner attribution. Upgrade or customize volume anytime.
               </motion.p>
             </div>
           </div>

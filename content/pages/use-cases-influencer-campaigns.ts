@@ -105,7 +105,7 @@ export const page: PageData = {
                   },
                   " (MIA20), generated from the same campaign."
                 ],
-                "The campaign is a gamified giveaway: entering with an email is the base action, and following Bloom's Instagram or sharing the post earns bonus entries.",
+                "The campaign is a tiered giveaway: entering with an email is the base action, and following Bloom's Instagram or sharing the post earns bonus entries.",
                 "Every entrant, winner or not, receives their influencer's 20% coupon code by email immediately, so the campaign converts even for people who don't win anything.",
                 "Influencers post the link in their Stories and bio for 7 to 10 days. Tragami's detection layer filters bot and duplicate entries before anyone touches the list.",
                 "Coupon codes are unique per influencer, so when someone checks out on Shopify, the code itself tells you exactly which creator gets the credit."

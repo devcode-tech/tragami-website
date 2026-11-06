@@ -102,7 +102,7 @@ export const page: PageData = {
                   " for each of its 22 stores from Tragami. What that code gets printed on is entirely their call, they choose table tents and a small register sticker. Tragami doesn't supply or touch any of that hardware."
                 ],
                 "Entrants submit an email and phone number (SMS opt-in), an optional photo of their meal, and their location, the location is pre-filled from the QR code itself, not self-reported.",
-                "Gamification adds bonus entries for following on Instagram or referring a friend who also enters.",
+                "The campaign adds bonus entries for following on Instagram or referring a friend who also enters.",
                 "A live leaderboard shows entries by location, refreshed daily, so the Round Rock, TX location can see it's ahead of Cedar Park by 40 entries with three days left.",
                 "The winning location gets a team lunch funded by corporate and a feature on Casa Verde's Instagram, an incentive staff at that location actually feel."
               ]
@@ -113,7 +113,7 @@ export const page: PageData = {
             },
             {
               "k": "p",
-              "v": "A larger email and SMS list, segmented by home location from day one, plus real signal on which locations under-index on customer engagement relative to foot traffic, useful for deciding where to focus staff training next."
+              "v": "A larger email and SMS list, segmented by home location from day one, plus real signal on which locations under-index on customer participation relative to foot traffic, useful for deciding where to focus staff training next."
             }
           ]
         }
@@ -125,7 +125,7 @@ export const page: PageData = {
         {
           "type": "head",
           "eyebrow": "Also works for high-ticket retail",
-          "title": "When the sale doesn't close today, the follow-up is the whole game.",
+          "title": "When the sale doesn't close today, the follow-up is everything.",
           "body": null,
           "center": false
         },

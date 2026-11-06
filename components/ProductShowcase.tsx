@@ -45,12 +45,12 @@ export function ProductShowcase() {
           className="relative z-20 flex flex-1 flex-col items-start px-8 pt-12 md:px-16 md:pt-16"
         >
           <h2 className="max-w-md text-[42px] font-medium leading-tight tracking-tight text-white md:text-[56px]">
-            The engagement layer,
+            The campaign layer,
             <br />
             in one screen.
           </h2>
           <p className="mt-4 max-w-sm text-[14px] text-white/70 md:text-[15px]">
-            Every capture form, every game, every reward and every attributed outcome, running on
+            Every capture form, every promo, every reward and every attributed outcome, running on
             one dashboard your team already knows how to read.
           </p>
           <button className="mt-6 rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition-transform hover:scale-105">

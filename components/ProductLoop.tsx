@@ -12,8 +12,8 @@ const STEPS = [
   },
   {
     n: "02",
-    label: "Engage",
-    detail: "They play a game or complete a challenge instead of filling out a form.",
+    label: "Channel",
+    detail: "They participate through their partner's trackable link or scannable QR code.",
   },
   {
     n: "03",

@@ -99,7 +99,7 @@ export const page: PageData = {
                   {
                     "b": "up the queue"
                   },
-                  ", a visible, gamified incentive to share."
+                  ", a visible, tiered incentive to share."
                 ],
                 "A short preference survey asks about color and use case (commute, gym, studio), data Nova's product team actually uses to plan initial inventory splits.",
                 "A handful of early-access unboxing units go to influencers in week one, seeding the initial wave of referral traffic into the waitlist.",

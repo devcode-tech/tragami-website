@@ -161,7 +161,7 @@ export const page: PageData = {
               "tag": "per workspace"
             },
             {
-              "label": "Gamified action history",
+              "label": "Campaign action history",
               "tag": "where used"
             }
           ]

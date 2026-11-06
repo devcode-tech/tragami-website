@@ -3,7 +3,7 @@ import type { PageData } from "@/content/types";
 export const page: PageData = {
   "route": "/use-cases/events",
   "title": "Events & Experiential Marketing | Tragami",
-  "description": "A real-world implementation of event marketing: a B2B exhibitor replaces the business-card fishbowl with a booth game that captures leads directly into Salesforce the same day.",
+  "description": "A real-world implementation of event marketing: a B2B exhibitor replaces the business-card fishbowl with a booth giveaway that captures leads directly into Salesforce the same day.",
   "hero": {
     "crumbs": [
       {
@@ -18,7 +18,7 @@ export const page: PageData = {
       }
     ],
     "eyebrow": "Events & Experiential Marketing",
-    "title": "Replace the business-card fishbowl with a booth game that syncs to Salesforce same day.",
+    "title": "Replace the business-card fishbowl with a booth giveaway that syncs to Salesforce same day.",
     "soon": "Coming soon",
     "subtitle": [
       "This use case is on our roadmap and not yet available to build in Tragami today. The implementation below shows how it's designed to work once it ships. Running a B2B giveaway today? See ",
@@ -28,7 +28,7 @@ export const page: PageData = {
       },
       ", which is live."
     ],
-    "body": "The fishbowl of business cards has always been a bad lead capture system, someone has to retype every card a week later, by which point the prospect has forgotten the conversation. A booth game fixes the capture problem and the delay problem at once.",
+    "body": "The fishbowl of business cards has always been a bad lead capture system, someone has to retype every card a week later, by which point the prospect has forgotten the conversation. A booth giveaway fixes the capture problem and the delay problem at once.",
     "ctas": [
       {
         "label": "Start Building a Campaign",
@@ -104,13 +104,13 @@ export const page: PageData = {
                 [
                   "A tablet at the booth runs a ",
                   {
-                    "b": "spin-the-wheel game"
+                    "b": "giveaway promotion"
                   },
                   ": prizes range from branded merch to a free system inspection, entered by scanning the attendee's badge and confirming an email."
                 ],
                 "Badge scanning auto-fills name, company, and title, so the booth staff aren't typing anything, just handing over the tablet for ten seconds.",
                 "A short optional question, \"What are you shopping for?\", tags the lead by product interest (residential, commercial, service contracts).",
-                "The prize tier someone lands on doubles as a rough interest signal, someone who spins for \"book a consultation\" is a hotter lead than someone who just wants a sticker.",
+                "The prize tier someone enters for doubles as a rough interest signal, someone who enters for \"book a consultation\" is a hotter lead than someone who just wants a sticker.",
                 [
                   "Every entry pushes into Salesforce ",
                   {

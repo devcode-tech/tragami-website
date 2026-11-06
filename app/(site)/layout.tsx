@@ -10,7 +10,8 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
   const hasOwnFooter =
     pathname === "/conversion-giveaways" ||
     pathname === "/channel-giveaways" ||
-    pathname === "/pricing";
+    pathname === "/pricing" ||
+    pathname === "/lifetime-deal";
 
   if (hasOwnFooter) {
     return <main className="bg-white">{children}</main>;

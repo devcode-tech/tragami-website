@@ -3,7 +3,7 @@ import type { PageData } from "@/content/types";
 export const page: PageData = {
   "route": "/use-cases/audience-growth",
   "title": "Community & Audience Growth | Tragami",
-  "description": "A real-world implementation of audience growth campaigns: a craft beverage brand builds its Discord community and email list ahead of a taproom opening using stacked gamified actions.",
+  "description": "A real-world implementation of audience growth campaigns: a craft beverage brand builds its Discord community and email list ahead of a taproom opening using stacked giveaway incentives.",
   "hero": {
     "crumbs": [
       {
@@ -21,7 +21,7 @@ export const page: PageData = {
     "title": "Stack small actions until \"join our list\" becomes \"join our community.\"",
     "soon": "Coming soon",
     "subtitle": "This use case is on our roadmap and not yet available to build in Tragami today. The implementation below shows how it's designed to work once it ships.",
-    "body": "A single email opt-in gets you an email. Stacking gamified actions, join the Discord, follow the account, refer a friend, gets you a warmer, more connected audience before you've even opened your doors.",
+    "body": "A single email opt-in gets you an email. Stacking giveaway actions—join the Discord, follow the account, refer a friend—gets you a warmer, more connected audience before you've even opened your doors.",
     "ctas": [
       {
         "label": "Start Building a Campaign",

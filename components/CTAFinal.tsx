@@ -32,7 +32,7 @@ const FAQS = [
   },
   {
     q: "Does Tragami need access to my POS?",
-    a: "No. Tragami tracks marketing engagement and attributed outcomes, not POS sales data, and never requires POS access from partners.",
+    a: "No. Tragami tracks campaign participation and attributed outcomes, not POS sales data, and never requires POS access from partners.",
   },
 ];
 

@@ -27,8 +27,8 @@ const faqs = [
     a: "Tragami supports webhooks for sending captured submission data to external systems that can receive them.",
   },
   {
-    q: "Does Tragami include mini-games?",
-    a: "The current product offering focuses on giveaway campaigns, lead capture, and attribution.",
+    q: "How does winner selection and bot detection work?",
+    a: "Tragami includes automated bot intelligence and duplicate lead filtering. You can pick winners using random draws based on your desired winner count or configure tiered winner selection.",
   },
 ];
 

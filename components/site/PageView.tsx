@@ -53,7 +53,7 @@ export function pageMetadata(page: PageData): Metadata {
     routeKeywords = [
       "on-site lead capture",
       "conversion rate optimization",
-      "gamified lead forms",
+      "giveaway lead forms",
       "sweepstakes entry conversion",
     ];
   } else if (page.route.includes("channel")) {

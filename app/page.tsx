@@ -9,7 +9,6 @@ import UseCases from "@/components/templates/finance-management-landing-page-fin
 import FeatureGrid from "@/components/templates/finance-management-landing-page-finsyc/Feature Grid Gamiflow";
 import PricingFinsyc from "@/components/templates/finance-management-landing-page-finsyc/Pricing Finsyc";
 import Faq from "@/components/templates/finance-management-landing-page-finsyc/FAQ Gamiflow";
-import CTA01VelaraTragami from "@/components/CTA01VelaraTragami";
 import CTAWithFooter01Finsyc from "@/components/templates/finance-management-landing-page-finsyc/CTA with Footer 01 Finsyc";
 
 export default function Home() {
@@ -112,8 +111,7 @@ export default function Home() {
       <FeatureGrid />
       <PricingFinsyc />
       <Faq />
-      <CTA01VelaraTragami />
-      <CTAWithFooter01Finsyc hideCta />
+      <CTAWithFooter01Finsyc />
     </main>
   );
 }

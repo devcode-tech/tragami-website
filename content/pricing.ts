@@ -1,5 +1,5 @@
 /** Pricing data ported from the original pricing page. Prices are per month unless noted. */
-export type ProductKey = "conversion" | "channel";
+export type ProductKey = "conversion" | "channel" | "one-app";
 
 export type Plan = {
   name: string;
@@ -466,6 +466,215 @@ export const PRICING: Record<ProductKey, Product> = {
       "minPrice": 9999,
       "maxPrice": 20000,
       "caption": "Estimated yearly price for Channel Scale at this volume"
+    }
+  },
+  "one-app": {
+    "key": "one-app",
+    "label": "One app",
+    "plans": [
+      {
+        "name": "Launch",
+        "best": false,
+        "badge": null,
+        "monthly": 129,
+        "yearly": 99,
+        "noteMonthly": "Billed monthly",
+        "noteYearly": "Billed yearly at $1,188/year",
+        "includes": {
+          "monthly": "5,000",
+          "yearly": "60,000",
+          "unit": "entries & leads",
+          "perMonthly": "/ mo",
+          "perYearly": "/ yr"
+        },
+        "desc": "Full giveaway form builder combined with partner attribution for growing brands.",
+        "features": [
+          "Unlimited active campaigns & forms",
+          "5,000 monthly entries & attributed leads",
+          "25 tracked channels & 50 partners / influencers",
+          "First-touch & last-touch attribution",
+          "Pro email integrations & standard rules",
+          "3 team members"
+        ],
+        "customize": null
+      },
+      {
+        "name": "Growth",
+        "best": true,
+        "badge": "Most popular",
+        "monthly": 549,
+        "yearly": 449,
+        "noteMonthly": "Billed monthly",
+        "noteYearly": "Billed yearly at $5,388/year",
+        "includes": {
+          "monthly": "25,000",
+          "yearly": "300,000",
+          "unit": "entries & leads",
+          "perMonthly": "/ mo",
+          "perYearly": "/ yr"
+        },
+        "desc": "All-in-one engine: interactive forms, partner leaderboards, and white-labeling.",
+        "features": [
+          "Everything in Launch, plus:",
+          "25,000 monthly entries & attributed leads",
+          "100 tracked channels & 250 partners / influencers",
+          "Remove Tragami branding",
+          "Partner leaderboards & OEM attribution",
+          "Webhooks & business integrations",
+          "10 team members"
+        ],
+        "customize": null
+      },
+      {
+        "name": "Scale",
+        "best": false,
+        "badge": null,
+        "monthly": 1299,
+        "yearly": 999,
+        "noteMonthly": "Billed monthly",
+        "noteYearly": "Billed yearly at $11,988/year",
+        "includes": {
+          "monthly": "100,000",
+          "yearly": "1,200,000",
+          "unit": "entries & leads",
+          "perMonthly": "/ mo",
+          "perYearly": "/ yr"
+        },
+        "desc": "For high-volume brands, retailers, and agencies running multi-channel operations.",
+        "features": [
+          "Everything in Growth, plus:",
+          "100,000+ monthly entries & attributed leads",
+          "500 tracked channels & 1,000 partners",
+          "Multi-touch & custom attribution models",
+          "REST API access & developer webhooks",
+          "Unlimited data retention",
+          "25 team members"
+        ],
+        "customize": "Need more than 100,000 entries and leads a month?"
+      }
+    ],
+    "compare": {
+      "head": [
+        "Feature",
+        "Launch",
+        "Growth",
+        "Scale"
+      ],
+      "rows": [
+        [
+          "Active campaigns",
+          "Unlimited",
+          "Unlimited",
+          "Unlimited"
+        ],
+        [
+          "Unlimited forms & templates",
+          "✓",
+          "✓",
+          "✓"
+        ],
+        [
+          "Tracked channels",
+          "25",
+          "100",
+          "500"
+        ],
+        [
+          "Partners & influencers",
+          "50",
+          "250",
+          "1,000"
+        ],
+        [
+          "Monthly entries & attributed leads",
+          "5,000",
+          "25,000",
+          "100,000"
+        ],
+        [
+          "Drag-and-drop form builder",
+          "✓",
+          "✓",
+          "✓"
+        ],
+        [
+          "Conditional logic & custom fields",
+          "✓",
+          "✓",
+          "✓"
+        ],
+        [
+          "First-touch & last-touch attribution",
+          "✓",
+          "✓",
+          "✓"
+        ],
+        [
+          "Multi-touch attribution models",
+          "–",
+          "–",
+          "✓"
+        ],
+        [
+          "Partner leaderboards & scorecards",
+          "–",
+          "✓",
+          "✓"
+        ],
+        [
+          "Bot protection & entry validation",
+          "✓",
+          "✓",
+          "✓"
+        ],
+        [
+          "Remove Tragami branding",
+          "–",
+          "✓",
+          "✓"
+        ],
+        [
+          "Coupon templates & incentives",
+          "✓",
+          "✓",
+          "✓"
+        ],
+        [
+          "Webhooks",
+          "–",
+          "✓",
+          "✓"
+        ],
+        [
+          "REST API access",
+          "–",
+          "–",
+          "✓"
+        ],
+        [
+          "Team members",
+          "3",
+          "10",
+          "25"
+        ],
+        [
+          "Data retention",
+          "12 months",
+          "24 months",
+          "Unlimited"
+        ]
+      ]
+    },
+    "modal": {
+      "title": "Customize One App Scale",
+      "sub": "Scale already includes 1,200,000 entries and leads a year. Drag to add more.",
+      "label": "Entries & leads per year",
+      "min": 1200000,
+      "max": 15000000,
+      "step": 100000,
+      "minPrice": 11988,
+      "maxPrice": 35000,
+      "caption": "Estimated yearly price for One App Scale at this volume"
     }
   }
 };

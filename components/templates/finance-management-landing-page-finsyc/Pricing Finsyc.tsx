@@ -89,7 +89,6 @@ export default function PricingFinsyc({ className }: { className?: string }) {
               >
                 {(Object.keys(PRICING) as ProductKey[]).map((key) => {
                   const isActive = productKey === key;
-                  const isConversion = key === "conversion";
                   return (
                     <button
                       key={key}
@@ -98,7 +97,7 @@ export default function PricingFinsyc({ className }: { className?: string }) {
                       aria-selected={isActive}
                       onClick={() => setProductKey(key)}
                       className={cn(
-                        "relative flex items-center gap-2.5 rounded-full px-5 sm:px-7 py-3 text-sm sm:text-base font-inter font-semibold transition-colors duration-200 cursor-pointer z-10",
+                        "relative flex items-center justify-center rounded-full px-5 sm:px-7 py-3 text-sm sm:text-base font-inter font-semibold transition-colors duration-200 cursor-pointer z-10",
                         isActive ? "text-white" : "text-[#111827]/70 hover:text-[#111827]"
                       )}
                     >
@@ -109,17 +108,7 @@ export default function PricingFinsyc({ className }: { className?: string }) {
                           transition={{ type: "spring", stiffness: 450, damping: 35 }}
                         />
                       )}
-                      <span>{PRICING[key].label} Giveaways</span>
-                      <span
-                        className={cn(
-                          "hidden md:inline-flex items-center text-[11px] font-medium px-2 py-0.5 rounded-full ml-1",
-                          isActive
-                            ? "bg-white/20 text-white"
-                            : "bg-[#2563EB]/10 text-[#2563EB]"
-                        )}
-                      >
-                        {isConversion ? "Lead Capture" : "Partner & QR"}
-                      </span>
+                      <span>{key === "one-app" ? "One app" : `${PRICING[key].label} Giveaways`}</span>
                     </button>
                   );
                 })}
@@ -173,7 +162,7 @@ export default function PricingFinsyc({ className }: { className?: string }) {
 
               {/* Dynamic Helper Note */}
               <p className="text-xs font-inter text-[#111827]/55 text-center">
-                Displaying plans for <strong className="text-[#111827] font-semibold">{product.label} Giveaways</strong> · Billed {yearly ? "annually with up to 40% savings applied" : "monthly with no long-term commitment"}
+                Displaying plans for <strong className="text-[#111827] font-semibold">{product.label === "One app" ? "One app" : `${product.label} Giveaways`}</strong> · Billed {yearly ? "annually with up to 40% savings applied" : "monthly with no long-term commitment"}
               </p>
             </motion.div>
 

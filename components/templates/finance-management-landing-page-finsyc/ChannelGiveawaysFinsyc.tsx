@@ -151,7 +151,7 @@ const faqs = [
   },
   {
     q: "Does Channel Giveaways require POS integration?",
-    a: "No. Tragami tracks marketing engagement, entry submission, and verified lead attribution. It operates entirely independently of your point-of-sale systems without requiring POS access or complex IT integration.",
+    a: "No. Tragami tracks campaign participation, entry submission, and verified lead attribution. It operates entirely independently of your point-of-sale systems without requiring POS access or complex IT integration.",
   },
 ];
 

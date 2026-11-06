@@ -52,14 +52,14 @@ const CARDS = [
     visual: <GaugeVisual color="#c9c2ff" />,
   },
   {
-    id: "engage",
-    href: "#engage",
-    label: "Engage",
-    title: "Interactive Games",
-    sub: "Built-in game library",
-    metric: "6",
-    unit: "formats ready to launch",
-    caption: "Average play time, under 30 seconds",
+    id: "channel",
+    href: "#channel",
+    label: "Channel",
+    title: "Partner Attribution",
+    sub: "Channel tracking engine",
+    metric: "100%",
+    unit: "attribution accuracy",
+    caption: "Track every partner and QR code",
     gradient: "linear-gradient(165deg,#ff8a5c 0%,#f0492f 50%,#8a2415 100%)",
     media: {
       poster:
@@ -122,7 +122,7 @@ export function GlassMetrics() {
             <span className="block">Built to</span>
             <span className="block">
               <DotNumber
-                value="engage"
+                value="convert"
                 dotRadius={2.4}
                 className="inline-block h-[0.9em] align-middle text-[#f0492f]"
               />{" "}

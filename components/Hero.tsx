@@ -3,19 +3,18 @@
 import { useEffect, useState } from "react";
 import {
   UserPlus,
-  Gamepad2,
-  Gift,
+  Trophy,
   BarChart3,
   Check,
   ArrowRight,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-type TabKey = "capture" | "engage" | "retain" | "attribution";
+type TabKey = "capture" | "channel" | "retain" | "attribution";
 
 const TABS: { key: TabKey; label: string; icon: typeof UserPlus }[] = [
   { key: "capture", label: "Capture", icon: UserPlus },
-  { key: "engage", label: "Engage", icon: Gamepad2 },
+  { key: "channel", label: "Channel", icon: ArrowRight },
   { key: "retain", label: "Retain", icon: Gift },
   { key: "attribution", label: "Attribution", icon: BarChart3 },
 ];
@@ -24,7 +23,7 @@ export function Hero() {
   const [active, setActive] = useState<TabKey>("capture");
 
   useEffect(() => {
-    const order: TabKey[] = ["capture", "engage", "retain", "attribution"];
+    const order: TabKey[] = ["capture", "channel", "retain", "attribution"];
     const id = setInterval(() => {
       setActive((current) => order[(order.indexOf(current) + 1) % order.length]);
     }, 4000);
@@ -49,7 +48,7 @@ export function Hero() {
       >
         <span className="block">More than a giveaway.</span>
         <span className="block bg-gradient-to-r from-black via-gray-500 to-gray-400 bg-clip-text text-transparent">
-          Capture. Engage. Retain.
+          Capture. Attribute. Convert.
         </span>
       </h1>
 
@@ -121,7 +120,7 @@ const HERO_VIDEO_SRC =
 function StageBackdrop({ active }: { active: TabKey }) {
   const tint: Record<TabKey, string> = {
     capture: "from-[#4b3cf0]/55 via-transparent to-[#1c1450]/70",
-    engage: "from-[#f0492f]/55 via-transparent to-[#5c1c10]/70",
+    channel: "from-[#f0492f]/55 via-transparent to-[#5c1c10]/70",
     retain: "from-[#149a6b]/55 via-transparent to-[#0d3d2c]/70",
     attribution: "from-[#1c1a2e]/55 via-transparent to-[#0a0a1a]/70",
   };
@@ -152,7 +151,7 @@ function TabOverlay({ active }: { active: TabKey }) {
     >
       <div className="w-[88%] max-w-md rounded-2xl bg-white p-6 shadow-2xl animate-slide-up-overlay">
         {active === "capture" && <CaptureCard />}
-        {active === "engage" && <EngageCard />}
+        {active === "channel" && <ChannelCard />}
         {active === "retain" && <RetainCard />}
         {active === "attribution" && <AttributionCard />}
       </div>
@@ -187,16 +186,16 @@ function CaptureCard() {
   );
 }
 
-function EngageCard() {
+function ChannelCard() {
   const metrics = [
     ["Participation rate", "82%"],
-    ["Avg. play time", "24s"],
-    ["Completion rate", "91%"],
-    ["Replays this week", "340"],
+    ["Tracked partners", "24"],
+    ["Attribution rate", "91%"],
+    ["Entries this week", "1,340"],
   ];
   return (
     <div>
-      <p className="mb-3 text-sm font-semibold text-black">Game performance</p>
+      <p className="mb-3 text-sm font-semibold text-black">Channel performance</p>
       <div className="mb-4 h-1.5 w-full overflow-hidden rounded-full bg-gray-100">
         <div className="h-full w-2/3 rounded-full bg-[#f0492f]" />
       </div>

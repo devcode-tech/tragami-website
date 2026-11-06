@@ -24,18 +24,18 @@ const FEATURED = [
     n: "01",
     name: "Automotive",
     blurb: "The oil change takes forty minutes either way. Make it the forty minutes that brings them back.",
-    items: ["QR in the waiting area", "30-second game while they wait", "Service or detailing reward"],
+    items: ["QR in the waiting area", "30-second giveaway entry while they wait", "Service or detailing reward"],
   },
   {
     n: "02",
     name: "Restaurants & cafés",
     blurb: "The wait for a table is dead time for you and dead time for them. Turn it into the next visit.",
-    items: ["Table QR, play before ordering", "Reward drops after the check", "Loyalty stacks automatically"],
+    items: ["Table QR, enter before ordering", "Reward drops after the check", "Loyalty stacks automatically"],
   },
   {
     n: "03",
     name: "Agencies",
-    blurb: "Stop stitching a giveaway tool to a game tool to a loyalty tool for every single client.",
+    blurb: "Stop stitching a giveaway tool to an attribution tool for every single client.",
     items: ["Every client, one dashboard", "Campaigns cloned across accounts", "Reporting your clients can read"],
   },
 ];

@@ -33,7 +33,7 @@ export const page: PageData = {
               "body": "Setup guides and best practices for getting the most out of Tragami.",
               "list": [
                 "Setting up your first Conversion campaign",
-                "Choosing gamified actions that actually convert",
+                "Choosing giveaway incentives that actually convert",
                 "A beginner's guide to Channel distribution",
                 "Connecting Tragami to your CRM",
                 "Writing consent language people actually read"

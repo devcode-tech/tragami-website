@@ -128,6 +128,7 @@ const jsonLdGlobalSchema = {
       featureList: [
         "Conversion Giveaways with custom entry forms and logic",
         "Channel Giveaways with trackable links and QR codes",
+        "One App suite combining conversion forms and partner attribution",
         "Source and partner multi-touch attribution",
         "Automated bot validation and submission fraud checks",
         "Centralized lead capture and webhook syncing",
@@ -137,6 +138,14 @@ const jsonLdGlobalSchema = {
       "@type": "FAQPage",
       "@id": `${BASE}#faq`,
       mainEntity: [
+        {
+          "@type": "Question",
+          name: "What products does Tragami offer?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Tragami offers Conversion Giveaways for customizable entry forms and lead capture, Channel Giveaways for partner and QR code source attribution, and One App which bundles both into a unified platform.",
+          },
+        },
         {
           "@type": "Question",
           name: "How is Tragami different from a standard giveaway tool?",

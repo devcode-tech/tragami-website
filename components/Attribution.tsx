@@ -17,7 +17,7 @@ import { cn } from "@/lib/utils";
  */
 const PILLARS = [
   { label: "Captures", items: ["QR scan", "campaign", "source", "customer"] },
-  { label: "Plays", items: ["game", "entry", "completion", "replay"] },
+  { label: "Entries", items: ["form", "entry", "submission", "validation"] },
   { label: "Rewards", items: ["type", "issued", "wallet", "expiry"] },
   { label: "Measures", items: ["redemption", "purchase", "lift", "ROI"] },
 ];
@@ -34,8 +34,8 @@ const CHECKLIST_CARDS = [
   },
   {
     n: "02",
-    title: "Every play, scored",
-    items: ["Game completion rate", "Reward issued vs. claimed", "Time from play to redemption"],
+    title: "Every entry, scored",
+    items: ["Form completion rate", "Reward issued vs. claimed", "Time from entry to redemption"],
     bg: "linear-gradient(168deg, #e2ebc9 0%, #e9f0c4 48%, #f0f4b8 78%, #f3f5b0 100%)",
   },
   {

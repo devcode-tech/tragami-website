@@ -12,11 +12,11 @@ const SCATTERED_TOOLS = [
   { label: "Giveaway tool", rotate: -6 },
   { label: "Coupon app", rotate: 4 },
   { label: "Loyalty card", rotate: -3 },
-  { label: "Game plugin", rotate: 7 },
+  { label: "Form builder", rotate: 7 },
   { label: "Spreadsheet, to tie it all together", rotate: -2 },
 ];
 
-const CONNECTED_STEPS = ["Capture", "Play", "Reward", "Return", "Purchase", "Measure"];
+const CONNECTED_STEPS = ["Capture", "Source", "Reward", "Return", "Purchase", "Measure"];
 
 export function Problem() {
   return (
@@ -144,7 +144,7 @@ function ScrollRevealParagraph() {
   const ref = useRef<HTMLParagraphElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start 0.9", "end 0.3"] });
   const text =
-    "A giveaway grabs an email and disappears. A coupon gets used once. A loyalty card sits forgotten in a drawer. A game holds attention for thirty seconds and nothing after. None of them talk to each other, and none of them bring the same customer back twice.";
+    "A giveaway grabs an email and disappears. A coupon gets used once. An untracked link leaves you guessing which partner actually drove the entry. None of them talk to each other, and none of them bring clear attribution.";
   const chars = text.split("");
 
   return (

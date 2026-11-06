@@ -21,7 +21,7 @@ export const page: PageData = {
     "title": "Capture first-party data through campaigns people want to participate in.",
     "soon": null,
     "subtitle": null,
-    "body": "Build campaign experiences that collect the information your business needs, while giving your audience a clear reason to engage.",
+    "body": "Build campaign experiences that collect the information your business needs, while giving your audience a clear reason to participate and enter.",
     "ctas": [
       {
         "label": "Start Building a Campaign",
