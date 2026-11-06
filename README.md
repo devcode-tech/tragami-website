@@ -91,7 +91,7 @@ when you are ready. The internal pages under `app/(site)/` keep the older header
   Prisma Features checklist card. Header unified via `SectionHeader`.
 - **Final CTA + FAQ** (`CTAFinal.tsx`) — rebuilt from the "CTA + FAQ" spec: the animated
   five-blob gradient CTA card (via CSS `@property`, in `globals.css` as
-  `.c5-animated-gradient`, retinted to the Gamiflow palette) beside a working FAQ accordion.
+  `.c5-animated-gradient`, retinted to the Tragami palette) beside a working FAQ accordion.
   The reference's own footer wasn't duplicated — the site already has one from a different
   reference. This replaces the earlier Boomerang-video treatment of this section, since the
   new reference doesn't call for video here; `components/ui/BoomerangVideo.tsx` is still in
@@ -152,7 +152,7 @@ components/
     CloudDecor.tsx
     VideoBG.tsx
     BoomerangVideo.tsx   (currently unused, kept for later)
-    GamiflowMark.tsx
+    TragamiMark.tsx
 lib/
   utils.ts           cn() class-merge helper
 ```
@@ -183,10 +183,10 @@ original (verified against the source markup at generation time, not re-typed by
 `lib/site.ts` is the one place nav links, footer columns, the "Start free" target
 (`SIGNUP_HREF`) and the login link live. `lib/routes.ts` lists every page route and feeds
 `app/sitemap.ts`; `app/robots.ts` points at it. Set `NEXT_PUBLIC_SITE_URL` in production if
-the domain isn't `gamiflow.com`.
+the domain isn't `tragami.com`.
 
 The real logo assets from the upload are in `public/logo.svg` and `app/favicon.ico` but
-aren't wired in yet, everything still renders the placeholder `GamiflowMark` circle-and-dot
+aren't wired in yet, everything still renders the placeholder `TragamiMark` circle-and-dot
 icon via `components/site/Brand.tsx`. Swap that one file to `<img src="/logo.svg" ... />`
 when you're ready to use the real mark; I left it as the placeholder rather than guess at how
 you want it sized and colored across light and dark backgrounds.

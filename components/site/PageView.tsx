@@ -169,7 +169,7 @@ export function JsonLdSchema({ page }: { page: PageData }) {
 
 /**
  * Modernized hero matching the Finsyc design system:
- * Light airy gradient, Onest typography, Sparkles pill badge,
+ * Light airy gradient, Onest typography, pill badge,
  * and high-fidelity interactive dashboard mockup.
  */
 export function HeroView({ page }: { page: PageData }) {

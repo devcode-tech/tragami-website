@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X, ArrowUpRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { TragamiMark } from "@/components/ui/GamiflowMark";
+import { TragamiMark } from "@/components/ui/TragamiMark";
 import {
   PRODUCT_GROUPS,
   USE_CASE_LINKS,

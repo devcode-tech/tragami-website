@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Sparkles, ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import { cn } from "@/lib/utils";
 import PricingFinsyc from "./Pricing Finsyc";
 import CTAWithFooter01Finsyc from "./CTA with Footer 01 Finsyc";
@@ -75,7 +75,6 @@ export default function PricingPageFinsyc() {
                 transition={{ delay: 0.3, duration: 0.8 }}
                 className="flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-[#3779eb]/10 border border-[#3779eb]/20 mb-6 whitespace-nowrap"
               >
-                <Sparkles className="w-4 h-4 text-[#3779eb]" />
                 <span className="font-inter text-xs sm:text-sm font-semibold tracking-wide text-[#3779eb] uppercase">
                   Simple, Transparent Pricing
                 </span>
@@ -114,7 +113,6 @@ export default function PricingPageFinsyc() {
         <section className="w-full bg-[#F7FDFF] py-20 lg:py-28">
           <div className="max-w-[860px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
             <div className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#3779eb]/20 bg-[#3779eb]/10 whitespace-nowrap mb-6">
-              <Sparkles className="w-4 h-4 text-[#3779eb]" />
               <span className="text-[#3779eb] font-inter text-base leading-6 tracking-[-0.3px]">
                 Billing Questions
               </span>

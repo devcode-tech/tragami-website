@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { Check, ArrowRight } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { TragamiMark } from "@/components/ui/GamiflowMark";
+import { TragamiMark } from "@/components/ui/TragamiMark";
 import { cn } from "@/lib/utils";
 
 /**

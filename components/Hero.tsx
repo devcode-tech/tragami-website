@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import {
-  Sparkles,
   UserPlus,
   Gamepad2,
   Gift,
@@ -40,7 +39,6 @@ export function Hero() {
         style={{ animationDelay: "0.2s" }}
       >
         <span className="flex h-6 items-center gap-1.5 rounded-full border border-gray-300 px-2.5 text-xs font-medium text-black">
-          <Sparkles className="h-3 w-3" />
           New: attribution across every campaign
         </span>
       </div>

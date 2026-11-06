@@ -18,7 +18,7 @@ import {
   Share2,
   ChevronUp,
 } from "lucide-react";
-import { TragamiMark } from "@/components/ui/GamiflowMark";
+import { TragamiMark } from "@/components/ui/TragamiMark";
 import { cn } from "@/lib/utils";
 import { ChannelMock, SampleNote } from "./Mockups";
 import CTAWithFooter01Finsyc from "./CTA with Footer 01 Finsyc";

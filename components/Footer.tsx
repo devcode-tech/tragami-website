@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { Music2, Facebook, Twitter, Youtube, Instagram } from "lucide-react";
 import Link from "next/link";
-import { TragamiMark } from "@/components/ui/GamiflowMark";
+import { TragamiMark } from "@/components/ui/TragamiMark";
 import { FOOTER_COLUMNS } from "@/lib/site";
 
 const LUMINA_VIDEO_SRC =
