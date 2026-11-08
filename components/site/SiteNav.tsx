@@ -11,6 +11,7 @@ import {
   USE_CASE_LINKS,
   PLATFORM_LINKS,
   SIGNUP_HREF,
+  LOGIN_HREF,
 } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
@@ -177,7 +178,7 @@ export function SiteNav() {
           {/* Desktop Right CTAs */}
           <div className="hidden items-center gap-4 lg:flex">
             <Link
-              href="/pricing"
+              href={LOGIN_HREF}
               className="font-inter text-sm font-medium text-[#111827]/75 hover:text-[#2563EB] transition-colors"
             >
               Log in

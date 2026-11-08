@@ -10,12 +10,12 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-type TabKey = "capture" | "channel" | "retain" | "attribution";
+type TabKey = "capture" | "channel" | "winner" | "attribution";
 
 const TABS: { key: TabKey; label: string; icon: typeof UserPlus }[] = [
   { key: "capture", label: "Capture", icon: UserPlus },
   { key: "channel", label: "Channel", icon: ArrowRight },
-  { key: "retain", label: "Retain", icon: Gift },
+  { key: "winner", label: "Winner", icon: Trophy },
   { key: "attribution", label: "Attribution", icon: BarChart3 },
 ];
 
@@ -23,7 +23,7 @@ export function Hero() {
   const [active, setActive] = useState<TabKey>("capture");
 
   useEffect(() => {
-    const order: TabKey[] = ["capture", "channel", "retain", "attribution"];
+    const order: TabKey[] = ["capture", "channel", "winner", "attribution"];
     const id = setInterval(() => {
       setActive((current) => order[(order.indexOf(current) + 1) % order.length]);
     }, 4000);
@@ -56,8 +56,8 @@ export function Hero() {
         className="mx-auto mb-8 max-w-2xl text-lg text-gray-600 opacity-0 animate-fade-in-up md:text-xl"
         style={{ animationDelay: "0.4s" }}
       >
-        Tragami combines customer capture, interactive promotions, rewards and loyalty into one
-        platform, with attribution running through every step.
+        Tragami combines customer capture, channel attribution, and winner selection into one
+        platform — with real-time analytics running through every step.
       </p>
 
       <a
@@ -121,7 +121,7 @@ function StageBackdrop({ active }: { active: TabKey }) {
   const tint: Record<TabKey, string> = {
     capture: "from-[#4b3cf0]/55 via-transparent to-[#1c1450]/70",
     channel: "from-[#f0492f]/55 via-transparent to-[#5c1c10]/70",
-    retain: "from-[#149a6b]/55 via-transparent to-[#0d3d2c]/70",
+    winner: "from-[#d4a017]/55 via-transparent to-[#6b4e00]/70",
     attribution: "from-[#1c1a2e]/55 via-transparent to-[#0a0a1a]/70",
   };
 
@@ -152,7 +152,7 @@ function TabOverlay({ active }: { active: TabKey }) {
       <div className="w-[88%] max-w-md rounded-2xl bg-white p-6 shadow-2xl animate-slide-up-overlay">
         {active === "capture" && <CaptureCard />}
         {active === "channel" && <ChannelCard />}
-        {active === "retain" && <RetainCard />}
+        {active === "winner" && <WinnerCard />}
         {active === "attribution" && <AttributionCard />}
       </div>
     </div>
@@ -211,27 +211,30 @@ function ChannelCard() {
   );
 }
 
-function RetainCard() {
+function WinnerCard() {
+  const winners = [
+    { rank: "1st", name: "Top entry", entries: "42 entries" },
+    { rank: "2nd", name: "Runner up", entries: "31 entries" },
+    { rank: "3rd", name: "Tiered pick", entries: "19 entries" },
+  ];
   return (
     <div className="text-left">
-      <div className="mb-3 flex items-center gap-2">
-        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#149a6b] text-white">
-          <Check className="h-3.5 w-3.5" />
-        </span>
-        <p className="text-sm font-semibold text-black">127 rewards redeemed this week</p>
+      <p className="mb-3 text-sm font-semibold text-black">Pick winners</p>
+      <div className="mb-4 h-1.5 w-full overflow-hidden rounded-full bg-gray-100">
+        <div className="h-full w-full rounded-full bg-[#d4a017]" />
       </div>
-      <div className="grid grid-cols-3 gap-3">
-        {[
-          ["Punch cards", "58"],
-          ["Coupons", "41"],
-          ["Points", "28"],
-        ].map(([label, value]) => (
-          <div key={label} className="rounded-lg bg-gray-50 p-2 text-center">
-            <p className="text-base font-semibold text-black">{value}</p>
-            <p className="text-[11px] text-gray-500">{label}</p>
+      <div className="space-y-2">
+        {winners.map((w) => (
+          <div key={w.rank} className="flex items-center justify-between rounded-lg bg-gray-50 px-3 py-2">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold text-[#d4a017]">{w.rank}</span>
+              <span className="text-sm text-gray-700">{w.name}</span>
+            </div>
+            <span className="text-xs text-gray-500">{w.entries}</span>
           </div>
         ))}
       </div>
+      <p className="mt-3 text-[11px] text-gray-400">Random draw · Tiered selection · Bot-filtered</p>
     </div>
   );
 }

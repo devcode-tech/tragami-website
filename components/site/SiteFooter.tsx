@@ -147,8 +147,8 @@ export function SiteFooter() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <div className="flex items-center gap-6">
-            <Link href="/" className="hover:opacity-100 transition-opacity">Privacy Policy</Link>
-            <Link href="/" className="hover:opacity-100 transition-opacity">Terms of Service</Link>
+            <Link href="/privacy" className="hover:opacity-100 transition-opacity">Privacy Policy</Link>
+            <Link href="/terms" className="hover:opacity-100 transition-opacity">Terms of Service</Link>
           </div>
           <div>
             &copy; 2026 Tragami. All rights reserved.

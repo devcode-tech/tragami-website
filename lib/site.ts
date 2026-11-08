@@ -9,7 +9,7 @@ export const SIGNUP_HREF = "/pricing";
 /** The two product pages the homepage and nav point at. */
 export const CONVERSION_HREF = "/conversion-giveaways";
 export const CHANNEL_HREF = "/channel-giveaways";
-export const LOGIN_HREF = "#";
+export const LOGIN_HREF = "https://app.tragami.com/auth/login";
 
 export type NavLink = { label: string; href: string; soon?: boolean };
 export type NavGroup = { label?: string; links: NavLink[] };
